@@ -14,7 +14,7 @@ interface Props {
 export function ConfirmDialog({ open, title, message, onConfirm, onCancel }: Props) {
   return (
     <Dialog open={open} onClose={onCancel}>
-      <DialogTitle>{title}</DialogTitle>
+      <DialogTitle sx={{ color: '#1a1a1a' }}>{title}</DialogTitle>
       <DialogContent>
         <DialogContentText>{message}</DialogContentText>
       </DialogContent>
