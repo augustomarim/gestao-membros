@@ -28,7 +28,7 @@ public class GlobalExceptionHandler {
         List<String> messages = ex.getBindingResult()
                 .getFieldErrors()
                 .stream()
-                .map(fe -> fe.getField() + ": " + fe.getDefaultMessage())
+                .map(fe -> fe.getDefaultMessage())
                 .toList();
 
         ErrorResponseDTO error = ErrorResponseDTO.builder()
